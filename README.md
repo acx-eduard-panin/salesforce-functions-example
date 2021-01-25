@@ -7,7 +7,8 @@
 
 ## Start working with Salesforce functions:
 - Create your first function: `sfdx evergreen:function:create <MyFunction> -l javascript`
-- Start your function: `sfdx evergreen:function:start --verbose`. Note you should call this command from the function directory.
+- Start your function: `sfdx evergreen:function:start --verbose`. 
+  **Note:** _call this command from the function directory_.
 - Invoke your new function: `sfdx evergreen:function:invoke http://localhost:8080 --payload='DATA_TO_USE_IN_FUNCTION' -u <your scratch org alias>`
 - Login into your environment: `sfdx evergreen:auth:login` (A limited access developer preview of Evergreen will be available with the Spring ’21 release in February 2021)
 - Deploy your function: `sfdx evergreen:function` (A limited access developer preview of Evergreen will be available with the Spring ’21 release in February 2021)
