@@ -1,13 +1,13 @@
 # Salesforce DX Project To Play around with Functions
 
-##Install required dependency:
+## Install required dependency:
 - Docker Desktop ([Windows](https://docs.docker.com/docker-for-windows/install/]), [Mac](https://docs.docker.com/docker-for-mac/install/))
 - SLDS Evergreen Plugin `sfdx plugins:install evergreen`
 - Run `npm install`
 
 ## Start working with Salesforce functions:
 - Create your first function: `sfdx evergreen:function:create <MyFunction> -l javascript`
-- Start your function from local from function folder: `sfdx evergreen:function:start --verbose`
+- Start your function: `sfdx evergreen:function:start --verbose`. Note you should call this command from the function directory.
 - Invoke your new function: `sfdx evergreen:function:invoke http://localhost:8080 --payload='DATA_TO_USE_IN_FUNCTION' -u <your scratch org alias>`
 - Login into your environment: `sfdx evergreen:auth:login` (A limited access developer preview of Evergreen will be available with the Spring ’21 release in February 2021)
 - Deploy your function: `sfdx evergreen:function` (A limited access developer preview of Evergreen will be available with the Spring ’21 release in February 2021)
