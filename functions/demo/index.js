@@ -24,15 +24,14 @@ module.exports = async function (event, context, logger) {
 	const { totalSize, records } = results;
 	logger.info(`Total Size: ${totalSize}`);
 	logger.info(JSON.stringify(records));
-	logger.info(records.length);
 	if (records.length) {
 		const [record] = records;
-		await generateWordDoc(id, record, logger, context.org.unitOfWork);
+		await generateDocument(id, record, logger, context.org.unitOfWork);
 	}
 	return 'Document is generated';
 }
 
-const generateWordDoc = async (recordId, record, logger, uow) => {
+const generateDocument = async (recordId, record, logger, uow) => {
 	logger.info(`Generation is started: ${JSON.stringify(record)}`);
 	return new Promise((resolve)=>{
 		const doc = new PDFDocument();
