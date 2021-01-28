@@ -20,3 +20,4 @@
 - [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
 - [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
 - [Evergreen: Serverless Functions & Compute for Customer 360 Platform](https://developer.salesforce.com/blogs/2019/11/introducing-salesforce-evergreen.html)
+- [Salesforce NodeJS SDK](https://www.npmjs.com/package/@salesforce/salesforce-sdk)
